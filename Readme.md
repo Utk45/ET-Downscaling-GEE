@@ -23,7 +23,7 @@ The repository is organized as follows:
 ```
 ├── scripts/  
 | ├── Downscaling/              
-│ | ├── DataExtraction/   
+│ |  ├── DataExtraction/   
 | |  |   ├── ExportTrainingDatatoDrive.js    # It exports the input features and ET values in form of CSV file
 | |  |   ├── InferenceETfromModelAsset.js    # It imports the trained model from assets and produces downscaled ET
 | |  |   ├── TrainTileUploadAsset.js         # It exports the training regions (tiles) as asset
