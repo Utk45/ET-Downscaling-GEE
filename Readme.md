@@ -21,13 +21,15 @@ The implementation details are provided in the paper
 The repository is organized as follows:
 
 ```
-├── scripts/               
-│   ├── DataExtraction/   
-|   |   ├── ExportTrainingDatatoDrive.js    # It exports the input features and ET values in form of CSV file
-|   |   ├── InferenceETfromModelAsset.js    # It imports the trained model from assets and produces downscaled ET
-|   |   ├── TrainTileUploadAsset.js         # It exports the training regions (tiles) as asset
-│   ├── ModelTraining/ 
-|   |   ├── modelTrain&Upload.ipynb         # It uses the exported training data to train the model, and uploads the trained model as an GEE asset
+├── scripts/  
+|  ├── Downscaling/              
+│ | ├── DataExtraction/   
+| |  |   ├── ExportTrainingDatatoDrive.js    # It exports the input features and ET values in form of CSV file
+| |  |   ├── InferenceETfromModelAsset.js    # It imports the trained model from assets and produces downscaled ET
+| |  |   ├── TrainTileUploadAsset.js         # It exports the training regions (tiles) as asset
+│ |  ├── ModelTraining/ 
+| |  |   ├── modelTrain&Upload.ipynb         # It uses the exported training data to train the model, and uploads the trained model as an GEE asset
+|  ├── Calibration/ 
 └── Readme.md             
 ```
 
