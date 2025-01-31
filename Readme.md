@@ -16,6 +16,7 @@ and would be published in ACM COMPASS 2024 on July 8-11, 2024. The main objectiv
 
 The implementation details are provided in the paper
 
+
 ### Repository Structure
 
 The repository is organized as follows:
@@ -32,6 +33,20 @@ The repository is organized as follows:
 | ├── Calibration/ 
 └── Readme.md             
 ```
+
+
+### Dataset for Training
+
+#### Asset generation from Tile coordinates
+File: TrainTileUploadAsset.js
+Takes list of training are polygons as input, converts them into feature collection and exports them as Earth Engine asset.
+
+#### Tabular dataset generation
+File: ExportTrainingDatatoDrive.js
+Imports asset and preprocesses it with clipping, temporal and spacial alignments and saves the csv to drive.
+
+#### Training
+
 
 ### Results 
 
