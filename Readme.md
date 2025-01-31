@@ -27,6 +27,7 @@ The repository is organized as follows:
 
 #### Asset generation from Tile coordinates
 File: TrainTileUploadAsset.js
+
 Takes list of training are polygons as input, converts them into feature collection and exports them as Earth Engine asset.
 
 #### Tabular dataset generation
@@ -36,6 +37,7 @@ This script imports the asset, configures parameters (area, year, season), loads
 
 #### Training 
 File: modelTrain&Upload.ipynb
+
 Takes the dataset for 2016-21 for seasons Rabi, Kharif and Zaid as traning data and 2022 as validation data (time duration can be customised), performs Random Forest Regression to generate trained decision trees (uploads them to GEE for ET inference) and outputs different types of errors over training and validation data.
 
 
