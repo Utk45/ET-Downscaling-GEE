@@ -44,6 +44,7 @@ Takes list of training are polygons as input, converts them into feature collect
 #### Tabular dataset generation
 File: ExportTrainingDatatoDrive.js
 Imports asset and preprocesses it with clipping, temporal and spacial alignments and saves the csv to drive.
+This script imports the asset, configures parameters (area, year, season), loads Landsat, MODIS, and GLDAS data, filters them by date and region, calculates spectral indices, merges climate variables, and resamples as needed. It then samples each matched image to produce training data with various bands (including indices, ET, and humidity) and finally exports the result as a CSV.
 
 #### Training
 
